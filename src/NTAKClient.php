@@ -25,7 +25,7 @@ class NTAKClient
 
     protected ?Logger    $logger = null;
 
-    protected static string $prodUrl = 'https://rms.ntaktst.hu';
+    protected static string $prodUrl = 'https://rms.ntak.hu';
     protected static string $testUrl = 'https://rms.tesztntak.hu';
 
     /**
