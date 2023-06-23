@@ -1,5 +1,5 @@
 {
-    "name": "kiralyta/ntak-php",
+    "name": "yrpn/ntak-php",
     "description": "An easy to use NTAK PHP Api",
     "license": "MIT",
     "autoload": {

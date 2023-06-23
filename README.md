@@ -19,7 +19,7 @@ Table of Contents:
 ## Installation
 
 ``` bash
-composer require kiralyta/ntak-php
+composer require yrpn/ntak-php
 ```
 
 > The package requires PHP ^8.1 since it was built around PHP enums.
