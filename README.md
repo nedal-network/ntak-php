@@ -41,7 +41,9 @@ $client = new NTAKClient(
     softwareRegNumber: 'NTAK RMS registration id',
     version:           'NTAK RMS version',
     certPath:          '/path/to/your.pem',
-    testing:           false                         // whether to hit the test NTAK API
+    testing:           false,                        // whether to hit the test NTAK API
+    logging:           true,                         // optional parameter for logging (default value: false)
+    loggingPath:       '/path/to/log/'               // the location of the log files (default value: ./ntak-log)
 );
 ```
 
