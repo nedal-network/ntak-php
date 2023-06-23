@@ -112,8 +112,6 @@ class NTAK
             'rendelesOsszesitok' => $orders,
         ];
 
-        $this->client->logging('---- rendeles-osszesito ----');
-
         return $this->client->message(
             $message,
             $this->when,
@@ -150,8 +148,6 @@ class NTAK
             ],
         ];
 
-        $this->client->logging('---- napi-zaras ----');
-
         return $this->client->message(
             $message,
             $this->when,
@@ -175,8 +171,6 @@ class NTAK
                 ]
             ],
         ];
-
-        $this->client->logging('---- ellenorzes ----');
 
         $response = $this->client->message(
             $message,
