@@ -94,8 +94,12 @@ class NTAK
                 'rendelesVege'                 => $ntakOrder->orderType === NTAKOrderType::SZTORNO
                     ? null
                     : $ntakOrder->end->timezone('Europe/Budapest')->toIso8601String(),
-                'helybenFogyasztott'           => $ntakOrder->isAtTheSpot,
-                'osszesitett'                  => false,
+                'helybenFogyasztott'           => $ntakOrder->orderType === NTAKOrderType::SZTORNO
+                    ? null
+                    : $ntakOrder->isAtTheSpot,
+                'osszesitett'                  => $ntakOrder->orderType === NTAKOrderType::SZTORNO
+                    ? null
+                    : false,
                 'fizetesiInformaciok'          => $ntakOrder->orderType === NTAKOrderType::SZTORNO
                     ? null
                     : [
