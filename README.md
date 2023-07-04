@@ -19,7 +19,7 @@ Table of Contents:
 ## Installation
 
 ``` bash
-composer require yrpn/ntak-php
+composer require nedal-network/ntak-php
 ```
 
 > The package requires PHP ^8.1 since it was built around PHP enums.
