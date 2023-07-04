@@ -290,7 +290,7 @@ class NTAKOrder
 
         $orderItems[] = NTAKOrderItem::buildServiceFeeRequest(
             $vat,
-            $totalOfOrderItemsWithDiscount * $this->serviceFee / 100,
+            round($totalOfOrderItemsWithDiscount * $this->serviceFee / 100),
             $this->end
         );
 
