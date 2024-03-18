@@ -46,10 +46,6 @@ class NTAKOrderItem
      */
     public function buildRequest(bool $isAtTheSpot = true): array
     {
-        $this->vat = ! $isAtTheSpot && $this->category === NTAKCategory::ALKMENTESITAL_HELYBEN
-            ?  NTAKVat::C_27
-            : $this->vat;
-
         return [
             'megnevezes'        => $this->name,
             'fokategoria'       => $this->category->name,
