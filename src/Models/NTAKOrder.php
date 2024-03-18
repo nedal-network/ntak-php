@@ -10,8 +10,8 @@ use Kiralyta\Ntak\Enums\NTAKVat;
 
 class NTAKOrder
 {
-    protected int $total;
-    protected int $totalWithDiscount;
+    public int $total;
+    public int $totalWithDiscount;
 
     /**
      * __construct
